@@ -1,0 +1,11 @@
+earthengine-api
+google-cloud-storage
+pandas
+geopandas
+rasterio
+numpy
+scikit-learn
+xgboost
+matplotlib
+seaborn
+shapely

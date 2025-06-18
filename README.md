@@ -12,43 +12,11 @@ The core idea is to establish a data pipeline that:
 5.  **Trains** a machine learning model to predict annual coffee yield.
 6.  **Analyzes and Visualizes** the predictions and model insights.
 
-## Project Structure
-
-Project Structure
-data/: Contains all data related to the project.
-input/: Raw input data (e.g., MAPSPAM, raw_yield_data.csv).
-processed/: Processed data outputs (e.g., consolidated features, yield data).
-coffee_extents/: Clipped coffee extent rasters.
-gee_exports/: Temporary storage for Google Earth Engine (GEE) exports downloaded from Google Cloud Storage.
-era5/
-sentinel2/
-smap/
-srtm/
-models/: Saved trained machine learning models and related artifacts.
-notebooks/: Jupyter Notebooks for data acquisition, processing, and modeling.
-00_setup_and_common_data_loading.ipynb
-01_gee_sentinel2_export.ipynb
-02_gee_era5_export.ipynb
-03_gee_srtm_smap_export.ipynb
-04_mapspam_coffee_extent_processing.ipynb
-05_vegetation_indices_calculation.ipynb
-06_environmental_data_integration.ipynb
-07_yield_data_preparation.ipynb
-08_data_consolidation_and_feature_engineering.ipynb
-09_yield_prediction_model.ipynb
-10_results_analysis_and_visualization.ipynb
-src/: Python modules containing reusable functions.
-gee_data_exporter.py
-gcs_io.py
-geospatial_processing.py
-.gitignore: Specifies intentionally untracked files to ignore.
-requirements.txt: Lists Python package dependencies.
-
 ## Setup and Installation
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your_username/bunalens-research-replication.git
+git clone https://github.com/Zabrsh/coffee-yield-prediction-using-remote-sensing-data
 cd bunalens-research-replication
 ```
 

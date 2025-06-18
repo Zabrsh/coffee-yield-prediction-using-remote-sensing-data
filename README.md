@@ -17,7 +17,7 @@ The core idea is to establish a data pipeline that:
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/Zabrsh/coffee-yield-prediction-using-remote-sensing-data
-cd bunalens-research-replication
+cd coffee-yield-prediction-using-remote-sensing-data
 ```
 
 ### 2. Create a Virtual Environment (Recommended)

@@ -16,35 +16,34 @@ The core idea is to establish a data pipeline that:
 
 The project is organized into the following directories and key files:
 
-bunalens-research-replication/
-├── data/
-│   ├── input/                # Raw input data (e.g., MAPSPAM, raw_yield_data.csv)
-│   ├── processed/            # Processed data outputs (e.g., consolidated features, yield data)
-│   │   ├── coffee_extents/   # Clipped coffee extent rasters
-│   ├── gee_exports/          # Temporary storage for GEE exports downloaded from GCS
-│   │   ├── era5/
-│   │   ├── sentinel2/
-│   │   ├── smap/
-│   │   └── srtm/
-├── models/                   # Saved trained machine learning models and related artifacts
-├── notebooks/                # Jupyter Notebooks for data acquisition, processing, and modeling
-│   ├── 00_setup_and_common_data_loading.ipynb
-│   ├── 01_gee_sentinel2_export.ipynb
-│   ├── 02_gee_era5_export.ipynb
-│   ├── 03_gee_srtm_smap_export.ipynb
-│   ├── 04_mapspam_coffee_extent_processing.ipynb
-│   ├── 05_vegetation_indices_calculation.ipynb
-│   ├── 06_environmental_data_integration.ipynb
-│   ├── 07_yield_data_preparation.ipynb
-│   ├── 08_data_consolidation_and_feature_engineering.ipynb
-│   ├── 09_yield_prediction_model.ipynb
-│   └── 10_results_analysis_and_visualization.ipynb
-├── src/                      # Python modules containing reusable functions
-│   ├── gee_data_exporter.py
-│   ├── gcs_io.py
-│   └── geospatial_processing.py
-├── .gitignore                # Specifies intentionally untracked files to ignore
-└── requirements.txt          # Lists Python package dependencies
+data/
+ input/                # Raw input data (e.g., MAPSPAM, raw_yield_data.csv)
+   processed/            # Processed data outputs (e.g., consolidated features, yield data)
+        coffee_extents/   # Clipped coffee extent rasters
+        gee_exports/          # Temporary storage for GEE exports downloaded from GCS
+        era5/
+        sentinel2/
+        smap/
+        srtm/
+    models/                   # Saved trained machine learning models and related artifacts
+    notebooks/                # Jupyter Notebooks for data acquisition, processing, and modeling
+    00_setup_and_common_data_loading.ipynb
+    01_gee_sentinel2_export.ipynb
+    02_gee_era5_export.ipynb
+    03_gee_srtm_smap_export.ipynb
+    04_mapspam_coffee_extent_processing.ipynb
+    05_vegetation_indices_calculation.ipynb
+    06_environmental_data_integration.ipynb
+    07_yield_data_preparation.ipynb
+    08_data_consolidation_and_feature_engineering.ipynb
+    09_yield_prediction_model.ipynb
+    10_results_analysis_and_visualization.ipynb
+ src/                      # Python modules containing reusable functions
+    gee_data_exporter.py
+    gcs_io.py
+    geospatial_processing.py
+.gitignore                # Specifies intentionally untracked files to ignore
+requirements.txt          # Lists Python package dependencies
 
 
 ## Setup and Installation

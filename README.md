@@ -1,12 +1,3 @@
-Okay, let's create the README.md file for your restructured project. This file will serve as the main documentation for anyone looking to understand, set up, and run your coffee yield prediction pipeline.
-
-File 16: README.md
-To create this file:
-
-In your bunalens-research-replication/ (root) directory, create a new file named README.md.
-Open it and copy-paste the content provided below, then save it.
-Markdown
-
 # Coffee Yield Prediction using Remote Sensing and Machine Learning (Sidama, Ethiopia)
 
 This project aims to predict coffee yields at the woreda (district) level in the Sidama region of Ethiopia, leveraging satellite imagery (Sentinel-2, SRTM, SMAP) and climate data (ERA5-Land) combined with machine learning techniques. It is a restructured and modularized version of a previous monolithic Jupyter Notebook.
